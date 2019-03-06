@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Custom bootstrap styles -->
+  <link rel="stylesheet" href="css/custom-bootstrap.css">
+  <!-- Template CSS styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Material icons -->
+  <!-- <link rel="stylesheet" href="css/material-icons-font.css"> -->
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <!-- Themes -->
+  <link rel="alternate stylesheet" href="css/themes/theme-purple.css" title="purple">
+  <!-- Theme switcher side panel  -->
+  <link rel="stylesheet" href="css/themes/style-switcher-panel.css">
+  <title>Bootstrap 4 Starter</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <!-- / Header ends -->
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Web Starter</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#B4Starter"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-md-center" id="B4Starter">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Page One</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Third Page</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- / Navigation ends -->
+  <!-- Main container -->
+  <main role="main" class="container">
+    <div class="starter-template">
+      <h1>Bootstrap 4 starter template</h1>
+      <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a
+        mostly barebones HTML document.</p>
+    </div>
+  </main>
+  <!-- / Main container ends-->
+  <!-- Scripts -->
+  <!-- Jquery -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <!-- popper js -->
+  <script src="js/vendor/popper.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <!-- App js -->
+  <script src="js/app.js"></script>
+  <!-- Style switcher side panel -->
+  <script src="js/settings-panel.js"></script>
+  <!-- Style switcher -->
+  <script src="js/vendor/styleswitcher.js"></script>
+  <!-- Jquery cookie to store theme selection in session -->
+  <script src="js/vendor/jquery.cookie.js"></script>
+  <!-- / Scripts end-->
+
+  <!-- Style switcher side panel-->
+  <div id="settings-panel">
+    <h1 class="panel-heading">Play around with Colors</h1>
+    <a href="#" id="settings-panel-tab"><i class="fa fa-pencil"></i></a>
+    <div class="settings-row">
+      <p>Background Color</p>
+      <ul>
+        <li><a href="#" class="purple" onclick="setActiveStyleSheet('purple');return false;"></a></li>
+        <li><a href="#" class="reset" onclick="setActiveStyleSheet('reset');return false;"></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- / Style switcher side panel ends -->
+</body>
+
+</html>

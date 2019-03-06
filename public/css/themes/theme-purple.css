@@ -1,0 +1,21 @@
+body {
+  color: #af125c; }
+
+a {
+  color: #c61468; }
+
+.navbar .navbar-nav .nav-link {
+  color: #c61468; }
+
+.navbar .dropdown-menu {
+  background: #c61468; }
+  .navbar .dropdown-menu .dropdown-item:hover, .navbar .dropdown-menu .dropdown-item:focus {
+    background-color: #9d1052; }
+
+@media (max-width: 575.98px) {
+  .navbar .navbar-collapse {
+    background-color: #8a0e49; }
+  .navbar .navbar-nav .nav-link {
+    color: #eb3c8e; } }
+
+/*# sourceMappingURL=../map/themes/theme-purple.css.map */

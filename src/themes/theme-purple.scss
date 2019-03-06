@@ -1,0 +1,24 @@
+@import "theme-colors";
+
+// Re-assign the primary color to theme color
+$primary: $purple;
+
+// Global
+body{color:$primary}
+a{color: lighten($primary, 5%)}
+// Navbar
+.navbar .navbar-nav .nav-link{color: lighten($primary, 5%)}
+.navbar .dropdown-menu{background: lighten($primary, 5%);
+.dropdown-item{
+        &:hover, &:focus{
+            background-color: darken($primary, 4%);
+        }
+    }
+};
+// In a small divises
+@media (max-width: 575.98px){
+    .navbar .navbar-collapse{
+        background-color: darken($primary, 8%); 
+    }
+    .navbar .navbar-nav .nav-link{color: lighten($primary, 20%)}
+}

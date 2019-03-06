@@ -1,0 +1,118 @@
+/* ------------------------
+Navigation 
+--------------------------*/
+
+.navbar{
+    border-bottom:1px solid rgb(224, 224, 224);
+    font-weight: 500;
+    padding: 0;
+
+    .navbar-nav{
+        .dropdown{
+          &:hover .dropdown-toggle{
+            color:$secondary;  
+          }
+
+          &:hover:after{
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 3px;
+              background: #ff992f;
+              bottom: -2px;
+              animation: dropdown-hover .2s linear;
+          }
+        }
+
+        .dropdown-toggle:after{
+            content: '\f107';
+            font-family: 'FontAwesome';
+            border:none;
+            vertical-align: baseline;
+        }
+
+        .nav-link{
+            line-height: 3.5rem;
+            transition: all .3s;
+            padding: 0.5rem 1rem;
+            color:lighten($primary, 20%);
+
+            &:hover, &:focus{
+                color:$secondary;  
+            }
+        }
+    } 
+
+    .dropdown-menu{
+        background: lighten($primary, 10%);
+        animation: nav-drop;
+        animation-duration: .2s;
+
+        .dropdown-item{
+            color:#fff;
+            padding: 0.85rem 1.5rem;
+            transition: all .2s;
+            
+
+            &:hover, &:focus{
+                background-color: darken($primary, 2%);
+                
+            }
+        }
+        
+    }
+
+    .navbar-nav{
+        .active>.nav-link,
+        .show>.nav-link{
+            color: $secondary;
+        }
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .navbar {
+        padding: 0;
+
+        .navbar-collapse{
+            background-color: darken($primary, 2%); 
+        }
+
+        .navbar-brand{
+            margin-left: 0.8rem;
+        }
+
+        .navbar-toggler{
+            border:none;
+            outline: none;
+        }
+
+        .navbar-nav{
+            li:last-child{
+                margin-bottom: 10px;
+            }
+
+            li:first-child{
+                margin-top: 10px;
+            }
+
+            .nav-link{
+                line-height: 1.5rem;
+            }
+        }
+       
+    }
+
+    .dropdown{
+        &:hover:after{
+            content: '';
+            display: none;
+        }
+
+        .dropdown-menu .dropdown-item{
+            padding: 0.6rem 1.5rem;
+        }
+    }
+}
+
