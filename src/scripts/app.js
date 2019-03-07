@@ -4,6 +4,16 @@ $(document).ready(function () {
     $('.purple').tooltip()
 });
 
+// Animated header on scroll
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('.navbar').addClass("stay-on-top");
+      }
+      else{
+        $('.navbar').removeClass("stay-on-top");
+      }
+    });
+
 // Bootstrap hover dropdown
 function toggleDropdown(e) {
     const _d = $(e.target).closest('.dropdown'),
